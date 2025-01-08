@@ -1,0 +1,51 @@
+{
+  "name": "aquanet-bot-lib",
+  "version": "0.1.1",
+  "description": "A DeepSeek API integration library for aquaculture-related business queries",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "eslint src --ext ts,tsx",
+    "test": "vitest",
+    "prepublishOnly": "pnpm run build"
+  },
+  "keywords": [
+    "deepseek",
+    "aquaculture",
+    "ai",
+    "chatbot",
+    "typescript"
+  ],
+  "author": "toan-2406",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:toan-2406/aquanet-bot-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/toan-2406/aquanet-bot-lib/issues"
+  },
+  "homepage": "https://github.com/toan-2406/aquanet-bot-lib#readme",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.45.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.0.2",
+    "vitest": "^0.34.6"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  }
+} 
